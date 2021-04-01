@@ -8,7 +8,7 @@ import { Home, About, Skills, Projects } from "../pages";
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/home">
+      <Route exact path="/">
         <Home />
       </Route>
       <Route exact path="/about">

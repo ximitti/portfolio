@@ -1,5 +1,9 @@
+// styles
+import { Container } from "./styles";
+
+// -------------------------------
 const Skills = () => {
-  return <div>Skills</div>;
+  return <Container>Skills</Container>;
 };
 
 export default Skills;

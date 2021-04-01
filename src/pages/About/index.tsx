@@ -1,5 +1,9 @@
+// styles
+import { Container } from "./styles";
+
+// -------------------------------
 const About = () => {
-  return <div>About</div>;
+  return <Container>About</Container>;
 };
 
 export default About;
