@@ -1,31 +1,41 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // ----------------------------------
 export const Container = styled.section`
-  position: fixed;
-  left: 0;
-  background-color: #f2f2fc;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background-color: var(--bg-main);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-area: main;
 
-  div {
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    text-align: center;
-  }
+	div {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		text-align: center;
 
-  @media (min-width: 1200px) {
-    padding-left: 150px;
-  }
+		h1 {
+			font-size: 4rem;
+			color: var(--title-color);
+			font-weight: 900;
+			margin: 0.5rem;
+		}
 
-  @media (min-width: 1600px) {
-    padding-left: 200px;
-  }
+		p {
+			font-size: 2rem;
+			color: var(--title-color);
+			font-weight: 400;
+			margin: 0.5rem;
+		}
+
+		@media (max-width: 650px) {
+			h1 {
+				font-size: 3.5rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
 `;

@@ -1,16 +1,18 @@
 // styles
-import { Wrapper } from "./styles";
+import { Wrapper } from './styles';
+
 // components
-import Sidebar from "./components/molecules/Sidebar";
-import Routes from "./routes";
+import Navbar from './components/molecules/Navbar';
+import Routes from './routes';
+
 // -----------------------
 const App = () => {
-  return (
-    <Wrapper>
-      <Sidebar />
-      <Routes />
-    </Wrapper>
-  );
+	return (
+		<Wrapper>
+			<Navbar />
+			<Routes />
+		</Wrapper>
+	);
 };
 
 export default App;
