@@ -7,10 +7,23 @@ export const Container = styled.nav`
 	background-color: var(--bg-sidebar);
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: start;
 	border-right: 1px solid var(--border-color);
 	align-items: center;
 	grid-area: sidebar;
+
+	div {
+		margin: 1rem 0.5rem;
+		width: 90%;
+		height: 25rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			height: 12rem;
+		}
+	}
 
 	button {
 		display: none;
@@ -62,6 +75,17 @@ export const Container = styled.nav`
 		align-items: center;
 		padding: 0 1rem;
 
+		div {
+			margin: 0;
+			height: 70px;
+			width: 90%;
+			justify-content: start;
+
+			img {
+				height: 65px;
+			}
+		}
+
 		ul {
 			display: block;
 			position: absolute;
@@ -85,6 +109,7 @@ export const Container = styled.nav`
 
 		button {
 			display: flex;
+			align-items: center;
 			padding: 0.5rem 1rem;
 			font-size: 1.2rem;
 			border: none;

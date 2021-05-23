@@ -7,6 +7,9 @@ import { NavLink } from 'react-router-dom';
 // icons
 import { FaHome, FaUser, FaReact, FaBriefcase } from 'react-icons/fa';
 
+// asserts
+import logo from '../../../asserts/logo.svg';
+
 // styles
 import { Container } from './styles';
 
@@ -15,20 +18,21 @@ const Navbar = () => {
 	const [isActive, setIsActive] = React.useState(false);
 
 	const toggleMenu = (event: React.MouseEvent) => {
-		console.log(event);
 		setIsActive(!isActive);
 	};
 
 	return (
 		<Container>
-			<div>LOGO</div>
+			<div>
+				<img src={logo} alt='logo' />
+			</div>
 			<button onClick={(e: React.MouseEvent) => toggleMenu(e)}>
 				Menu <span className={isActive ? 'active' : undefined}></span>
 			</button>
 			<ul className={isActive ? 'active' : undefined}>
 				<li>
 					<NavLink
-						onClick={toggleMenu}
+						onClick={(e: React.MouseEvent) => toggleMenu(e)}
 						exact
 						to='/'
 						activeStyle={{
@@ -40,7 +44,7 @@ const Navbar = () => {
 				</li>
 				<li>
 					<NavLink
-						onClick={toggleMenu}
+						onClick={(e: React.MouseEvent) => toggleMenu(e)}
 						exact
 						to='/about'
 						activeStyle={{ color: 'var(--blue-color)' }}>
@@ -50,7 +54,7 @@ const Navbar = () => {
 				</li>
 				<li>
 					<NavLink
-						onClick={toggleMenu}
+						onClick={(e: React.MouseEvent) => toggleMenu(e)}
 						exact
 						to='/skills'
 						activeStyle={{ color: 'var(--blue-color)' }}>
@@ -60,7 +64,7 @@ const Navbar = () => {
 				</li>
 				<li>
 					<NavLink
-						onClick={toggleMenu}
+						onClick={(e: React.MouseEvent) => toggleMenu(e)}
 						exact
 						to='/projects'
 						activeStyle={{ color: 'var(--blue-color)' }}>
