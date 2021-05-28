@@ -1,5 +1,6 @@
 // styles
-import { Wrapper } from './styles';
+import { Wrapper } from './styles/styles';
+import GlobalStyles from './styles/global';
 
 // components
 import Navbar from './components/molecules/Navbar';
@@ -8,10 +9,13 @@ import Routes from './routes';
 // -----------------------
 const App = () => {
 	return (
-		<Wrapper>
-			<Navbar />
-			<Routes />
-		</Wrapper>
+		<>
+			<GlobalStyles />
+			<Wrapper>
+				<Navbar />
+				<Routes />
+			</Wrapper>
+		</>
 	);
 };
 

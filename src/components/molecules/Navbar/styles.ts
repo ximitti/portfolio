@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 // -----------------------------------
 export const Container = styled.nav`
+	grid-area: sidebar;
+
 	box-sizing: border-box;
 	background-color: var(--bg-sidebar);
 	display: flex;
@@ -10,7 +12,6 @@ export const Container = styled.nav`
 	justify-content: start;
 	border-right: 1px solid var(--border-color);
 	align-items: center;
-	grid-area: sidebar;
 
 	div {
 		margin: 1rem 0.5rem;
@@ -74,6 +75,7 @@ export const Container = styled.nav`
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 1rem;
+		height: 70px;
 
 		div {
 			margin: 0;
@@ -114,6 +116,7 @@ export const Container = styled.nav`
 			font-size: 1.2rem;
 			border: none;
 			background: none;
+			color: var(--text-color);
 			cursor: pointer;
 			gap: 0.5rem;
 
@@ -121,6 +124,7 @@ export const Container = styled.nav`
 				display: block;
 				width: 20px;
 				border-top: 2px solid;
+				color: inherit;
 
 				&::after,
 				&::before {
