@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
+// motion
+import { motion } from 'framer-motion';
+
 // ----------------------------------
-export const Container = styled.section`
+export const Container = styled(motion.section)`
 	grid-area: main;
 
 	display: grid;
@@ -14,22 +17,24 @@ export const Container = styled.section`
 	padding: 2rem;
 	gap: 1rem;
 	overflow: hidden;
+	width: 100%;
 
 	.sobre {
 		grid-area: sobre;
 
 		padding: 0 0.5rem;
-		box-shadow: 0 2px var(--border-color);
+		width: 100%;
+		border-bottom: 2px solid var(--border-color);
 
 		h1 {
-			font-size: 3.5rem;
+			font-size: 3.2rem;
 			color: var(--title-color);
 			font-weight: 900;
 			margin: 0.5rem 0;
 		}
 
 		h3 {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			color: var(--title-color);
 			font-weight: 400;
 			margin: 0.5rem 0;
@@ -37,12 +42,13 @@ export const Container = styled.section`
 
 		div {
 			line-height: 1.5rem;
-		}
 
-		div p {
-			color: var(--text-color);
-			font-size: 1.1rem;
-			margin-bottom: 0.5rem;
+			p {
+				color: var(--text-color);
+				font-size: 1rem;
+				line-height: 1.2rem;
+				margin-bottom: 0.5rem;
+			}
 		}
 	}
 
@@ -60,7 +66,7 @@ export const Container = styled.section`
 			width: 100%;
 
 			h3 {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				color: var(--title-color);
 				font-weight: 700;
 				margin: 0.5rem 0;
@@ -76,7 +82,7 @@ export const Container = styled.section`
 				height: 100%;
 
 				ul {
-					line-height: 2rem;
+					line-height: 1.2rem;
 					font-size: 1rem;
 					color: var(--text-color);
 					font-weight: 600;
@@ -89,20 +95,20 @@ export const Container = styled.section`
 						h6 {
 							font-size: 0.9rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--text-color);
 						}
 
 						h4 {
 							font-size: 1rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--title-color);
 						}
 
 						p {
 							font-size: 0.9rem;
-							line-height: 1.5rem;
+							line-height: 1.2rem;
 							color: var(--text-color);
 						}
 
@@ -138,10 +144,10 @@ export const Container = styled.section`
 			width: 100%;
 
 			h3 {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				color: var(--title-color);
 				font-weight: 700;
-				margin: 0.5rem 0;
+				margin: 0.3rem 0;
 			}
 
 			div {
@@ -154,7 +160,7 @@ export const Container = styled.section`
 				height: 100%;
 
 				ul {
-					line-height: 2rem;
+					line-height: 1.5rem;
 					font-size: 1rem;
 					color: var(--text-color);
 					font-weight: 600;
@@ -167,20 +173,20 @@ export const Container = styled.section`
 						h6 {
 							font-size: 0.9rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--text-color);
 						}
 
 						h4 {
 							font-size: 1rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--title-color);
 						}
 
 						p {
 							font-size: 0.9rem;
-							line-height: 1.5rem;
+							line-height: 1.2rem;
 							color: var(--text-color);
 						}
 
@@ -216,10 +222,10 @@ export const Container = styled.section`
 			width: 100%;
 
 			h3 {
-				font-size: 2rem;
+				font-size: 1.5rem;
 				color: var(--title-color);
 				font-weight: 700;
-				margin: 0.5rem 0;
+				margin: 0.3rem 0;
 			}
 
 			div {
@@ -232,7 +238,7 @@ export const Container = styled.section`
 				height: 100%;
 
 				ul {
-					line-height: 2rem;
+					line-height: 1.5rem;
 					font-size: 1rem;
 					color: var(--text-color);
 					font-weight: 600;
@@ -245,20 +251,20 @@ export const Container = styled.section`
 						h6 {
 							font-size: 0.9rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--text-color);
 						}
 
 						h4 {
 							font-size: 1rem;
 							font-weight: 700;
-							margin-bottom: 0.5rem;
+							margin-bottom: 0.3rem;
 							color: var(--title-color);
 						}
 
 						p {
 							font-size: 0.9rem;
-							line-height: 1.5rem;
+							line-height: 1.2rem;
 							color: var(--text-color);
 						}
 

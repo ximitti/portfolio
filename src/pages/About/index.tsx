@@ -1,12 +1,22 @@
 // icons
 import { FaRegCalendarAlt } from 'react-icons/fa';
+
 // styles
 import { Container } from './styles';
+
+// animation
+import * as animation from '../../styles/animations';
 
 // -------------------------------
 const About = () => {
 	return (
-		<Container>
+		<Container
+			key='about'
+			initial='initial'
+			animate='in'
+			exit='out'
+			variants={animation.pageVariants}
+			transition={animation.pageTransition}>
 			<div className='sobre'>
 				<h1>Sobre mim</h1>
 				<h3>Bem vindo ao meu portfólio</h3>

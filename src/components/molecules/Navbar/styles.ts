@@ -5,25 +5,18 @@ import styled from 'styled-components';
 export const Container = styled.nav`
 	grid-area: sidebar;
 
-	box-sizing: border-box;
 	background-color: var(--bg-sidebar);
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: start;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(auto, 200px) 1fr;
 	border-right: 1px solid var(--border-color);
-	align-items: center;
 
 	div {
-		margin: 1rem 0.5rem;
-		width: 90%;
-		height: 25rem;
+		width: 100%;
+		height: 20rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		img {
-			height: 12rem;
-		}
 	}
 
 	button {
@@ -71,11 +64,10 @@ export const Container = styled.nav`
 
 	@media (max-width: 650px) {
 		border-bottom: 1px solid var(--border-color);
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		grid-template-columns: 80px 1fr;
+		grid-template-rows: 70px;
 		padding: 0 1rem;
-		height: 70px;
+		/* height: 70px; */
 		position: fixed;
 		width: 100%;
 		z-index: 100;
@@ -122,6 +114,7 @@ export const Container = styled.nav`
 			color: var(--text-color);
 			cursor: pointer;
 			gap: 0.5rem;
+			justify-self: end;
 
 			span {
 				display: block;

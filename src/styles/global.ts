@@ -19,9 +19,11 @@ export default createGlobalStyle`
     }
 
     body {
+        background-color: var(--bg-main);
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
             'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
             'Helvetica Neue', sans-serif;
+            font-size: 14px;
         -webkit-font-smoothing: antialiased !important;
         -moz-osx-font-smoothing: grayscale;
     }
@@ -48,13 +50,13 @@ export default createGlobalStyle`
         list-style: none;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1601px) {
         html {
             font-size: 93.75%;
         }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 1441px) {
         html {
             font-size: 87.5%;
         }

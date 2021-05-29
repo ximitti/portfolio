@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
+// motion
+import { motion } from 'framer-motion';
+
 // ----------------------------------
-export const Container = styled.section`
+export const Container = styled(motion.section)`
 	grid-area: main;
 
 	display: grid;
@@ -19,7 +22,7 @@ export const Container = styled.section`
 		padding: 0 0.5rem;
 
 		h1 {
-			font-size: 3.5rem;
+			font-size: 3.2rem;
 			color: var(--title-color);
 			font-weight: 900;
 			margin: 0.5rem 0;
@@ -29,12 +32,15 @@ export const Container = styled.section`
 	.techs {
 		grid-area: techs;
 
+		display: grid;
+
 		ul {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			padding: 1rem;
 			gap: 2rem;
-			place-items: center;
+			width: 100%;
+			place-content: space-around;
 
 			li {
 				/* box-shadow: 0 0 15px 5px #888; */
@@ -42,8 +48,8 @@ export const Container = styled.section`
 				text-align: center;
 
 				img {
-					max-width: 200px;
-					max-height: 200px;
+					max-width: 125px;
+					max-height: 125px;
 					width: 95%;
 				}
 			}
@@ -56,7 +62,7 @@ export const Container = styled.section`
 
 		.stacks {
 			h1 {
-				font-size: 2.5rem;
+				font-size: 2.2rem;
 				margin-bottom: 1.5rem;
 			}
 		}

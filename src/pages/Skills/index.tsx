@@ -4,10 +4,19 @@ import * as logo from '../../asserts';
 // styles
 import { Container } from './styles';
 
+// animation
+import * as animation from '../../styles/animations';
+
 // -------------------------------
 const Skills = () => {
 	return (
-		<Container>
+		<Container
+			key='home'
+			initial='initial'
+			animate='in'
+			exit='out'
+			variants={animation.pageVariants}
+			transition={animation.pageTransition}>
 			<section className='stacks'>
 				<h1>Principais Stacks</h1>
 			</section>
