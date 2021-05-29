@@ -76,6 +76,9 @@ export const Container = styled.nav`
 		align-items: center;
 		padding: 0 1rem;
 		height: 70px;
+		position: fixed;
+		width: 100%;
+		z-index: 100;
 
 		div {
 			margin: 0;

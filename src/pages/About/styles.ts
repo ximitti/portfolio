@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const Container = styled.section`
 	grid-area: main;
 
-	background-color: var(--bg-main);
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: minmax(auto, 400px);
@@ -14,6 +13,7 @@ export const Container = styled.section`
 
 	padding: 2rem;
 	gap: 1rem;
+	overflow: hidden;
 
 	.sobre {
 		grid-area: sobre;
@@ -22,7 +22,7 @@ export const Container = styled.section`
 		box-shadow: 0 2px var(--border-color);
 
 		h1 {
-			font-size: 4rem;
+			font-size: 3.5rem;
 			color: var(--title-color);
 			font-weight: 900;
 			margin: 0.5rem 0;
@@ -290,6 +290,7 @@ export const Container = styled.section`
 
 	@media (max-width: 650px) {
 		padding: 1rem;
+		overflow-y: auto;
 
 		.curriculum {
 			flex-flow: column nowrap;

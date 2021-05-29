@@ -8,6 +8,7 @@ export const Wrapper = styled.main`
 	grid-template-columns: minmax(300px, auto) 1fr;
 	grid-template-rows: 1fr;
 	grid-template-areas: 'sidebar main';
+	background-color: var(--bg-main);
 
 	@media (max-width: 650px) {
 		grid-template-columns: 1fr;

@@ -1,3 +1,5 @@
+// icons
+import { FaRegCalendarAlt } from 'react-icons/fa';
 // styles
 import { Container } from './styles';
 
@@ -34,7 +36,9 @@ const About = () => {
 						<ul>
 							<li>
 								<span></span>
-								<h6>2020 - 2021</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2020 - 2021
+								</h6>
 
 								<h4>Kenzie Academy Brasil</h4>
 
@@ -56,7 +60,9 @@ const About = () => {
 							</li>
 							<li>
 								<span></span>
-								<h6>2010 - 2011</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2010 - 2011
+								</h6>
 
 								<h4>Uninter - Incompleto</h4>
 
@@ -75,7 +81,9 @@ const About = () => {
 						<ul>
 							<li>
 								<span></span>
-								<h6>2020 - 2021</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2020 - 2021
+								</h6>
 
 								<h4>Peer Coach - Kenzie Academy Brasil</h4>
 
@@ -101,7 +109,9 @@ const About = () => {
 							</li>
 							<li>
 								<span></span>
-								<h6>2007 - 2019</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2007 - 2019
+								</h6>
 
 								<h4>
 									Analista Programador - Accenture do Brasil
@@ -123,7 +133,9 @@ const About = () => {
 						<ul>
 							<li>
 								<span></span>
-								<h6>2020 - 2021</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2020 - 2021
+								</h6>
 
 								<h4>
 									Front-End Developer - Kenzie Academy Brasil
@@ -145,7 +157,9 @@ const About = () => {
 							</li>
 							<li>
 								<span></span>
-								<h6>2016 - 2016</h6>
+								<h6>
+									<FaRegCalendarAlt /> 2016 - 2016
+								</h6>
 
 								<h4>
 									SAP Certified Developement Associate - ABAP

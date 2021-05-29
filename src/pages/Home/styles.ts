@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 // ----------------------------------
 export const Container = styled.section`
-	background-color: var(--bg-main);
 	display: flex;
 	justify-content: center;
 	align-items: center;

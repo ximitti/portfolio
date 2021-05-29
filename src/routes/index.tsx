@@ -2,16 +2,16 @@
 import { Route, Switch } from 'react-router-dom';
 
 // pages
-import { Home, About, Skills, Projects } from '../pages';
+import * as pages from '../pages';
 
 // --------------------------------------
 const Routes = () => {
 	return (
 		<Switch>
-			<Route exact path='/' component={Home} />
-			<Route exact path='/about' component={About} />
-			<Route exact path='/skills' component={Skills} />
-			<Route exact path='/projects' component={Projects} />
+			<Route exact path='/' component={pages.Home} />
+			<Route exact path='/about' component={pages.About} />
+			<Route exact path='/skills' component={pages.Skills} />
+			<Route exact path='/projects' component={pages.Projects} />
 		</Switch>
 	);
 };
